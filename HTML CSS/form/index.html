@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="input-form" action="">
+        <div id="form-col-1">
+            <div class="starter">
+                <h3>Get Started With Monster</h3>
+                <label for="email">Email Address:</label>
+                <label for="f-name">First name:</label>
+                <label for="l-name">Last name:</label>
+                <label for="user-name">Desired Username:</label>
+                <label for="pass">Choose a password:</label>
+                <label for="re-pass">Re-enter password:</label>
+            </div>
+            <hr>
+            <div class="personal">
+                <h3>Personal Details</h3>
+                <label for="curr-loc">Current location:</label>
+                <label for="mob-num">Mobile Number:</label>
+                <label for="phn-num">Phone Number:</label>
+                <label for="pref-job-loc">Preferred Job Locaion:</label>
+                <label for="nationality">Nationality:</label>
+                <label for="gen">Gender:</label>
+            </div>
+            <div class="prof">
+                <h3>Professional Details</h3>
+                <label for="tot-exp">Total Experience:</label>
+                <label for="industry">Current / Preferred Industry:</label>
+                <label for="function">Function:</label>
+                <label for="skills">Key Skills:</label>
+            </div>
+            <div class="email">
+                <h3>Email Subscription</h3>
+            </div>
+        </div>
+
+        <div id="form-col-2">
+            <div class="starter-rt">
+                <input type="email" id="email" name="email" required>
+                <input type="text" id="f-name" name="f-name" required>
+                <input type="text" id="l-name" name="l-name">
+                <input type="text" id="user-name" name="user-name" required>
+                <input type="password" id="pass" name="pass" required>
+                <input type="password" id="re-pass" name="re-pass" required>
+            </div>
+            <div class="personal-rt">
+                <select name="" id="">
+                    <option value="disabled">- Select -</option>
+                </select>
+                <input type="text" name="curr-loc" id="curr-loc">
+                <input type="tel" name="mob-num" id="mob-num" placeholder="+91">
+                <input type="tel" name="phn-num" id="phn-num" placeholder="+91">
+                <select name="pref-job-loc" id="pref-job-loc" size="4">
+                    <option value="disabled">- Select -</option>
+                    <option value="Anywhere">Anywhere</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                </select>
+                <select name="nationality" id="nationality">
+                    <option value="disabled">- Select -</option>
+                    <option value="Indian">Indian</option>
+                </select>
+                <div id="gen">
+                    <input type="radio" name="gen-male" id="gen-male">
+                    <label for="gen-male">Male</label>
+                    <input type="radio" name="gen-female" id="gen-female">
+                    <label for="gen-female">Female</label>
+                </div>
+            </div>
+
+            <div class="prof-rt">
+                <select name="tot-exp" id="tot-exp">
+                    <option value="disabled">- Select -</option>
+                    <label for="years">Years</label>
+                    <option value="disabled">- Select -</option>
+                </select>
+                <select name="industry" id="industry" size="8">
+                    <option value="disabled">- Select -</option>
+                    <option value="Any">Any</option>
+                    <option value="Automotive/a">Automotive</option>
+                    <option value="Banking/Financial Services">Banking/Financial Services</option>
+                    <option value="Bio Technology & Life Sciences">Bio Technology [&] Life Sciences</option>
+                    <option value="Chemicals/Plastic/Rubber">Chemicals/Plastic/Rubber</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Consumer Goods/FMCG">Consumer Goods/FMCG</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                    <option value="Any">Any</option>
+                </select>
+                <select name="function" id="function" size="12">
+                    <option value="disabled">- Select -</option>
+                    <option value="Admin/secreterial">Admin/secreterial</option>
+                    <option value="Customer Service/Call Center/BPO">Customer Service/Call Center/BPO</option>
+                    <option value="Finance & Accounts">Finance [&] Accounts</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="IT">IT</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Marketing & Communications">Marketing [&] Communications</option>
+                    <option value="Purchase/Logistics/Supply Chain">Purchase/Logistics/Supply Chain</option>
+                    <option value="Sales/Business Developmet">Sales/Business Development</option>
+                    <option value="Industry Specific Functions"><em>Industry Specific Functions</em></option>
+                    <option value="Advertising/Entertainment/Media">Advertising/Entertainment/Media</option>
+                    <option value="Banking , Insurance & Financial Services">Banking , Insurance [&] Financial Services
+                    </option>
+                    <option value="disabled">- Select -</option>
+                    <option value="disabled">- Select -</option>
+                    <option value="disabled">- Select -</option>
+                    <option value="disabled">- Select -</option>
+                    <option value="disabled">- Select -</option>
+                    <option value="disabled">- Select -</option>
+                </select>
+
+                <input type="text" name="skills" id="skills">
+            </div>
+
+            <div class="email-rt">
+                <p><strong>Emails you would like to receive</strong></p>
+                <input type="checkbox" name="prod&letter" id="prod&letter">
+                <label for="prod&letter">Monster products [&] newsletters</label>
+                <input type="checkbox" name="off&promo" id="off&promo">
+                <label for="off&promo">Offers [&] Promotions from leading companies</label>
+                <input type="checkbox" name="jobs&sms" id="jobs&sms">
+                <label for="jobs&sms">Receive matching jobs through SMS</label>
+            </div>
+        </div>
+    </form>
+    <input type="submit" value="Submit">
+</body>
+
+</html>
